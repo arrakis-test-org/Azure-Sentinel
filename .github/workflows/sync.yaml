@@ -12,7 +12,7 @@ jobs:
 permissions:
   actions: write
   
-    steps:
+  steps:
     - uses: actions/checkout@v4
     - name: repo-sync
       uses: repo-sync/github-sync@v2
