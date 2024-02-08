@@ -18,4 +18,3 @@ jobs:
         source_repo: "https://github.com/Azure/Azure-Sentinel"
         source_branch: "*"
         destination_branch: "*"
-        github_token: ${{ secrets.PAT }}
