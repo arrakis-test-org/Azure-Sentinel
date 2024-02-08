@@ -15,7 +15,7 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       env:
-      github_token: ${{ github.token }}
+        GITHUB_TOKEN: ${{ github.token }}
       with:
         source_repo: "https://github.com/Azure/Azure-Sentinel"
         source_branch: "*"
