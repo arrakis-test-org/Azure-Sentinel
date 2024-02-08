@@ -13,12 +13,12 @@ permissions:
   actions: write
   
 steps:
-    - uses: actions/checkout@v4
-    - name: repo-sync
-      uses: repo-sync/github-sync@v2
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-      with:
-        source_repo: "https://github.com/Azure/Azure-Sentinel"
-        source_branch: "*"
-        destination_branch: "*"
+  - uses: actions/checkout@v4
+  - name: repo-sync
+    uses: repo-sync/github-sync@v2
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    with:
+      source_repo: "https://github.com/Azure/Azure-Sentinel"
+      source_branch: "*"
+      destination_branch: "*"
